@@ -5,7 +5,7 @@ from flask_cors import CORS
 import logging
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True, origins="https://hestia-secrect-area.onrender.com")
+CORS(app, supports_credentials=True, origins="hestia-secrect-area-vercel.vercel.app")
 
 # Configuração do logger
 logging.basicConfig(level=logging.INFO)
