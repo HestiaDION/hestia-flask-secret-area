@@ -42,7 +42,7 @@ def login():
     try:
         # Consultar a API externa
         logging.info(f"Consultando a API externa para o email: {email}")
-        response = requests.get(f'https://hestia-api-postgres.onrender.com/advertiser/profile/{email}')
+        response = requests.get(f'https://hestia-api-postgres.onrender.com/token/access/{email}')
         response.raise_for_status()
 
         user_data = response.json()
